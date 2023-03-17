@@ -1,0 +1,33 @@
+name: Front-end-ci
+on:
+  push:
+    branches-ignore:
+      - main
+jobs:
+  ci:
+    name: Unit and end-to-end tests
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./web-ui
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install Dependencies with install
+        run: npm install
+
+      - name: Install Dependencies with ci
+        run: npm ci
+
+      - name: Install Eslint
+        run: npm install -g eslint
+
+      - name: Install Prettier
+        run: npm i -g prettier
+
+      - name: Run ESLint
+        run: npm run lint
+
+      - name: Unit Tests
+        run: npm test -- --watchAll=false  --passWithNoTests

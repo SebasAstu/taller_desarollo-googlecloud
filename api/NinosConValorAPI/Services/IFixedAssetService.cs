@@ -1,0 +1,13 @@
+﻿using NinosConValorAPI.Models;
+
+namespace NinosConValorAPI.Services
+{
+    public interface IFixedAssetService
+    {
+        public Task<FixedAssetModel> CreateFixedAssetAsync(FixedAssetModel fixedAsset, int programHouseId, int typeId);
+        Task<IEnumerable<FixedAssetModel>> GetFixedAssetsAsync();
+        Task<FixedAssetModel> GetFixedAssetAsync(int fixedAssetId);
+        Task<FixedAssetModel> UpdateFixedAssetAsync(int fixedAssetId, FixedAssetModel fixedAsset);
+        Task DeleteFixedAssetAsync(int fixedAssetId);
+    }
+}

@@ -1,0 +1,42 @@
+[
+  {
+     "id":9,
+     "name":"Computadora2",
+     "price":100.58,
+     "quantity":5,
+     "programHouseAcronym": "SDE",
+     "assetTypeAssetCategoryId":1
+  },
+  {
+     "id":11,
+     "name":"Computadora3",
+     "price":100.58,
+     "quantity":5,
+     "programHouseAcronym": "SDE",
+     "assetTypeAssetCategoryId":2
+  },
+  {
+     "id":13,
+     "name":"Computadora",
+     "price":1000,
+     "quantity":1,
+     "programHouseAcronym": "SDE",
+     "assetTypeAssetCategoryId":3
+  },
+  {
+     "id":14,
+     "name":"Monitor curvo",
+     "price":200,
+     "quantity":1,
+     "programHouseAcronym": "SDE",
+     "assetTypeAssetCategoryId":4
+  },
+  {
+     "id":15,
+     "name":"Teclado",
+     "price":100,
+     "quantity":1,
+     "programHouseAcronym": "SDE",
+     "assetTypeAssetCategoryId":1
+  }
+]
